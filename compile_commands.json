@@ -1,0 +1,30 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32L011xx",
+      "-ICore/Inc",
+      "-IDrivers/STM32L0xx_HAL_Driver/Inc",
+      "-IDrivers/STM32L0xx_HAL_Driver/Inc/Legacy",
+      "-IDrivers/CMSIS/Device/ST/STM32L0xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/main.lst",
+      "-o",
+      "build/main.o",
+      "Core/Src/main.c"
+    ],
+    "directory": "/home/calin/repos/sensus-probe-fw",
+    "file": "/home/calin/repos/sensus-probe-fw/Core/Src/main.c",
+    "output": "/home/calin/repos/sensus-probe-fw/build/main.o"
+  }
+]
